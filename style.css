@@ -1,0 +1,151 @@
+/*Header*/
+header {
+    margin: 2em;
+    background: #f8f8f8;
+    padding: 2em 0;
+    text-align: center;
+}
+
+.title {
+    padding: 1em;
+}
+
+/*Typography*/
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.125rem;
+    margin: 0;
+}
+
+h1,
+h2 {
+    font-family: 'Lora', serif;
+    color: #143774;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+a {
+    color: #143774;
+}
+
+a:hover,
+a:focus {
+    color: #1792D2;
+}
+
+.article-title {
+    font-size: 1.5rem;
+}
+
+.widget-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.contacts-item {
+    list-style-type: none;
+    padding: .3em;
+}
+
+/*Layout*/
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+footer {
+    background: #143774;
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+/*articles*/
+
+.article {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.article-texts {
+    order: 2;
+}
+
+.article-image {
+    order: 1;
+}
+
+/*Widgets*/
+
+.sidebar-widget {
+    border: 20px solid #efefef;
+    margin-bottom: 2em;
+    padding: 1em;
+}
+
+.contacts-container {
+    display: flex;
+    justify-content: space-around;    
+}
+
+/*Media Queries*/
+@media (min-width: 675px) {
+    .article {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .article-texts {
+        width: 70%;
+    }
+
+    .article-img-container {
+        width: 25%;
+    }
+
+    .article-image {
+        width: 100%;
+        min-height: 250px;
+        object-fit: cover;
+    }
+
+    .container-flex {
+        flex-direction: row;
+    }
+
+    .contacts-container {
+        flex-direction: column;
+    }
+
+    main {
+        width: 80%;
+    }
+
+    aside {
+        width: 20%;
+        min-width: 200px;
+        margin-left: 1em;
+    }
+}
